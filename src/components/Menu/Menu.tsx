@@ -1,7 +1,4 @@
-import React from 'react'
 import { Button } from '@mui/material'
-import { NavLink } from 'react-router-dom'
-import classes from './Menu.module.scss'
 
 type Props = {}
 
