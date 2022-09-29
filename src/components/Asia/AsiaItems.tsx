@@ -20,9 +20,11 @@ const AsiaItems = ({ name, description, image }: ProductProps) => {
                 <CardContent>
                     <h3 className={`product-title`}>{name}</h3>
                     <div className="product-img">
-                        <img src={image} alt="" />
+                        <img src={image} alt="" className="image" />
                     </div>
-                    <div className="product-description">{description}</div>
+                    <div className="product-description-asia">
+                        {description}
+                    </div>
                 </CardContent>
 
                 <CardActions className="btn-wrap">

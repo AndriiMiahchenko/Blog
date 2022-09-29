@@ -5,6 +5,9 @@
         width: 300px;
         height: 400px;
     }
+    .image {
+        border-radius: 50%;
+    }
 }
 
 .btn-wrap {
@@ -16,10 +19,11 @@
 .product-title {
     text-transform: uppercase;
 }
-.product-description {
+.product-description-asia {
     font-size: 18px;
     margin-top: 15px;
     padding: 10px;
-    background-color: #ed7fb7d1;
+    background-color: #c2ec2bd1;
     border-radius: 8px;
+    height: 150px;
 }

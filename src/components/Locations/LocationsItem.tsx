@@ -7,9 +7,10 @@ type ProductProps = {
     name: string
     description: string
     image: string
+    area: string
 }
 
-const LocationsItem = ({ name, description, image }: ProductProps) => {
+const LocationsItem = ({ name, description, image, area }: ProductProps) => {
     return (
         <>
             <Card
@@ -28,7 +29,9 @@ const LocationsItem = ({ name, description, image }: ProductProps) => {
 
                 <CardActions className="btn-wrap">
                     <Button variant="contained">
-                        <NavLink to="/asia">Let`s Travel</NavLink>
+                        <NavLink to={area} className="btn-locations">
+                            Let`s Travel
+                        </NavLink>
                     </Button>
                 </CardActions>
             </Card>
