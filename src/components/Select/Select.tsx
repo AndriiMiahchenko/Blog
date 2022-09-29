@@ -4,6 +4,8 @@ import InputLabel from '@mui/material/InputLabel'
 import MenuItem from '@mui/material/MenuItem'
 import FormControl from '@mui/material/FormControl'
 import Select, { SelectChangeEvent } from '@mui/material/Select'
+import { NavLink } from 'react-router-dom'
+import './Select.scss'
 
 export default function SelectDestinations() {
     const [location, setLocation] = React.useState('')
@@ -32,13 +34,18 @@ export default function SelectDestinations() {
                     label="Location"
                     onChange={handleChange}
                 >
-                    <MenuItem value={'asia'}>Asia</MenuItem>
+                    <MenuItem value={'asia'}>
+                        <NavLink to="/asia" className="select-style">
+                            Asia
+                        </NavLink>
+                    </MenuItem>
                     <MenuItem value={'europe'}>Europe</MenuItem>
                     <MenuItem value={'africa'}>Africa</MenuItem>
                     <MenuItem value={'central&south-america'}>
                         Central and South America
                     </MenuItem>
                     <MenuItem value={'middle-east'}>Middle East</MenuItem>
+                    <MenuItem value={'australia'}>Australia</MenuItem>
                 </Select>
             </FormControl>
         </Box>

@@ -14,7 +14,18 @@ type LocationsProps = {
 const Locations = (props: Props) => {
     return (
         <>
-            <Typography variant="h4" textAlign="center" margin={3}>
+            <Typography
+                variant="h4"
+                textAlign="center"
+                margin={3}
+                style={{
+                    backgroundColor: '#aad7a1c4',
+                    padding: '40px 0',
+                    textTransform: 'uppercase',
+                    fontWeight: 600,
+                    color: 'tomato',
+                }}
+            >
                 Make choise, and start your first travel
             </Typography>
             <Grid
@@ -22,12 +33,12 @@ const Locations = (props: Props) => {
                 direction="row"
                 justifyContent="center"
                 alignItems="center"
-                spacing={3}
-                padding={'15px'}
+                spacing={7}
+                padding={'15px 140px'}
             >
                 {locationsArray.map(
                     ({ id, name, image, description }: LocationsProps) => (
-                        <Grid item xs={12} sm={6} md={4} key={id}>
+                        <Grid item xs={12} sm={6} md={6} key={id}>
                             <LocationsItem
                                 id={id}
                                 name={name}

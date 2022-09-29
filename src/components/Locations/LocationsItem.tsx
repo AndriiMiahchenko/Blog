@@ -5,19 +5,18 @@ type ProductProps = {
     id: number
     name: string
     description: string
-
     image: string
 }
 
-const LocationsItem = ({
-    name,
-    description,
-
-    image,
-}: ProductProps) => {
+const LocationsItem = ({ name, description, image }: ProductProps) => {
     return (
         <>
-            <Card>
+            <Card
+                style={{
+                    backgroundColor: 'lavenderblush',
+                    textAlign: 'center',
+                }}
+            >
                 <CardContent>
                     <h3 className={`product-title`}>{name}</h3>
                     <div className="product-img">
@@ -27,7 +26,7 @@ const LocationsItem = ({
                 </CardContent>
 
                 <CardActions className="btn-wrap">
-                    <Button variant="outlined">Let`s Travel`</Button>
+                    <Button variant="contained">Let`s Travel</Button>
                 </CardActions>
             </Card>
         </>
