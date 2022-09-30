@@ -8,14 +8,23 @@ type ProductProps = {
     description: string
     image: string
     area: string
+    bgcolor: string
+    dsccolor: string
 }
 
-const LocationsItem = ({ name, description, image, area }: ProductProps) => {
+const LocationsItem = ({
+    name,
+    description,
+    image,
+    area,
+    bgcolor,
+    dsccolor,
+}: ProductProps) => {
     return (
         <>
             <Card
                 style={{
-                    backgroundColor: 'lavenderblush',
+                    backgroundColor: `${bgcolor}`,
                     textAlign: 'center',
                 }}
             >
@@ -24,7 +33,12 @@ const LocationsItem = ({ name, description, image, area }: ProductProps) => {
                     <div className="product-img">
                         <img src={image} alt="" />
                     </div>
-                    <div className="product-description">{description}</div>
+                    <div
+                        className="product-description"
+                        style={{ backgroundColor: `${dsccolor}` }}
+                    >
+                        {description}
+                    </div>
                 </CardContent>
 
                 <CardActions className="btn-wrap">

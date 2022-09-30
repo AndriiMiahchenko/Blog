@@ -1,8 +1,10 @@
 import Africa from 'components/Africa/Africa'
 import America from 'components/America/America'
 import Asia from 'components/Asia/Asia'
+import Australia from 'components/Australia/Australia'
 import Europe from 'components/Europe/Europe'
 import Locations from 'components/Locations/Locations'
+import MiddleEast from 'components/MiddleEast/MiddleEast'
 import Slider from 'components/Slider/Slider'
 import { Routes, Route } from 'react-router-dom'
 
@@ -19,8 +21,8 @@ const Main = (props: Props) => {
                 <Route path="europe" element={<Europe />} />
                 <Route path="africa" element={<Africa />} />
                 <Route path="america" element={<America />} />
-                <Route path="middle-east" element={<Asia />} />
-                <Route path="australia" element={<Asia />} />
+                <Route path="middle-east" element={<MiddleEast />} />
+                <Route path="australia" element={<Australia />} />
             </Routes>
         </>
     )

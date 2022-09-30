@@ -10,6 +10,8 @@ type LocationsProps = {
     image: string
     description: string
     area: string
+    bgcolor: string
+    dsccolor: string
 }
 
 const Locations = (props: Props) => {
@@ -44,6 +46,8 @@ const Locations = (props: Props) => {
                         image,
                         description,
                         area,
+                        bgcolor,
+                        dsccolor,
                     }: LocationsProps) => (
                         <Grid item xs={12} sm={6} md={6} key={id}>
                             <LocationsItem
@@ -52,6 +56,8 @@ const Locations = (props: Props) => {
                                 image={image}
                                 description={description}
                                 area={area}
+                                bgcolor={bgcolor}
+                                dsccolor={dsccolor}
                             />
                         </Grid>
                     )

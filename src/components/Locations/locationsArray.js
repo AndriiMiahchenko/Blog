@@ -5,6 +5,8 @@ export const locationsArray = [
         image: '/images/asia-cat.jpg',
         description: 'Majestic Asia! An incredible continent that has something to offer for any kind of traveler.',
         area: '/asia',
+        bgcolor: '#f4f96fd1',
+        dsccolor: '#c2ec2bd1',
     },
     {
         id: 2,
@@ -12,6 +14,8 @@ export const locationsArray = [
         image: '/images/europe-cat.jpg',
         description: 'Architectural masterpieces, beautiful nature, and fantastic culinary diversity.',
         area: '/europe',
+        bgcolor: '#767769d1',
+        dsccolor: '#4c4c49',
     },
     {
         id: 3,
@@ -19,6 +23,8 @@ export const locationsArray = [
         image: '/images/africa-cat.jpg',
         description: 'From the exotic wildlife and sand dunes, to the rich history & picturesque cities of Marocco.',
         area: '/africa',
+        bgcolor: '#ed7735d1',
+        dsccolor: '#ee8727a2',
     },
     {
         id: 4,
@@ -26,6 +32,8 @@ export const locationsArray = [
         image: '/images/america-cat.jpg',
         description: 'Where skyscrapers sit next to quaint pueblos, and emerald green jungle quickly turns into otherworldy desert.',
         area: '/america',
+        bgcolor: '#53c743db',
+        dsccolor: '#679c0fa2',
     },
     {
         id: 5,
@@ -33,6 +41,8 @@ export const locationsArray = [
         image: '/images/middle-east-cat.jpg',
         description: ' Often unfairly overlooked as it is home to some of the world`s most beautiful spots!',
         area: '/middle-east',
+        bgcolor: '#6ea8c4',
+        dsccolor: '#318fbc',
     },
     {
         id: 6,
@@ -40,6 +50,8 @@ export const locationsArray = [
         image: '/images/australia-cat.jpg',
         description: 'Australia is everything you have dreamed of and more. It is a land of colors and contrasts.',
         area: '/australia',
+        bgcolor: '#009688bd',
+        dsccolor: '#458c85bd',
     },
 ]
 

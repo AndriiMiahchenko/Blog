@@ -54,8 +54,16 @@ export default function SelectDestinations() {
                             Central and South America
                         </NavLink>
                     </MenuItem>
-                    <MenuItem value={'middle-east'}>Middle East</MenuItem>
-                    <MenuItem value={'australia'}>Australia</MenuItem>
+                    <MenuItem value={'middle-east'}>
+                        <NavLink to="/middle-east" className="select-style">
+                            Middle East
+                        </NavLink>
+                    </MenuItem>
+                    <MenuItem value={'australia'}>
+                        <NavLink to="/australia" className="select-style">
+                            Australia
+                        </NavLink>
+                    </MenuItem>
                 </Select>
             </FormControl>
         </Box>
