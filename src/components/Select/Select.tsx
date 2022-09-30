@@ -44,9 +44,15 @@ export default function SelectDestinations() {
                             Europe
                         </NavLink>
                     </MenuItem>
-                    <MenuItem value={'africa'}>Africa</MenuItem>
+                    <MenuItem value={'africa'}>
+                        <NavLink to="/africa" className="select-style">
+                            Africa
+                        </NavLink>
+                    </MenuItem>
                     <MenuItem value={'central&south-america'}>
-                        Central and South America
+                        <NavLink to="/america" className="select-style">
+                            Central and South America
+                        </NavLink>
                     </MenuItem>
                     <MenuItem value={'middle-east'}>Middle East</MenuItem>
                     <MenuItem value={'australia'}>Australia</MenuItem>
