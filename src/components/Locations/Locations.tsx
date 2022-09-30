@@ -12,6 +12,7 @@ type LocationsProps = {
     area: string
     bgcolor: string
     dsccolor: string
+    color: string
 }
 
 const Locations = (props: Props) => {
@@ -48,6 +49,7 @@ const Locations = (props: Props) => {
                         area,
                         bgcolor,
                         dsccolor,
+                        color,
                     }: LocationsProps) => (
                         <Grid item xs={12} sm={6} md={6} key={id}>
                             <LocationsItem
@@ -58,6 +60,7 @@ const Locations = (props: Props) => {
                                 area={area}
                                 bgcolor={bgcolor}
                                 dsccolor={dsccolor}
+                                color={color}
                             />
                         </Grid>
                     )

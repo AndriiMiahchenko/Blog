@@ -10,6 +10,7 @@ type ProductProps = {
     area: string
     bgcolor: string
     dsccolor: string
+    color: string
 }
 
 const LocationsItem = ({
@@ -19,6 +20,7 @@ const LocationsItem = ({
     area,
     bgcolor,
     dsccolor,
+    color,
 }: ProductProps) => {
     return (
         <>
@@ -35,7 +37,10 @@ const LocationsItem = ({
                     </div>
                     <div
                         className="product-description"
-                        style={{ backgroundColor: `${dsccolor}` }}
+                        style={{
+                            backgroundColor: `${dsccolor}`,
+                            color: `${color}`,
+                        }}
                     >
                         {description}
                     </div>

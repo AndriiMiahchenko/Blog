@@ -7,6 +7,7 @@ export const locationsArray = [
         area: '/asia',
         bgcolor: '#f4f96fd1',
         dsccolor: '#c2ec2bd1',
+        color: '',
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ export const locationsArray = [
         area: '/europe',
         bgcolor: '#767769d1',
         dsccolor: '#4c4c49',
+        color: 'white',
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ export const locationsArray = [
         area: '/africa',
         bgcolor: '#ed7735d1',
         dsccolor: '#ee8727a2',
+        color: 'white',
     },
     {
         id: 4,
@@ -34,6 +37,7 @@ export const locationsArray = [
         area: '/america',
         bgcolor: '#53c743db',
         dsccolor: '#679c0fa2',
+        color: '',
     },
     {
         id: 5,
@@ -43,6 +47,7 @@ export const locationsArray = [
         area: '/middle-east',
         bgcolor: '#6ea8c4',
         dsccolor: '#318fbc',
+        color: 'white',
     },
     {
         id: 6,
@@ -52,6 +57,7 @@ export const locationsArray = [
         area: '/australia',
         bgcolor: '#009688bd',
         dsccolor: '#458c85bd',
+        color: 'white',
     },
 ]
 
