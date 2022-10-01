@@ -9,6 +9,7 @@ type AsiaProps = {
     name: string
     image: string
     description: string
+    area: string
 }
 
 const Asia = (props: Props) => {
@@ -37,13 +38,14 @@ const Asia = (props: Props) => {
                 padding={'15px 140px'}
             >
                 {asiaArray.map(
-                    ({ id, name, image, description }: AsiaProps) => (
+                    ({ id, name, image, description, area }: AsiaProps) => (
                         <Grid item xs={12} sm={6} md={6} key={id}>
                             <AsiaItems
                                 id={id}
                                 name={name}
                                 image={image}
                                 description={description}
+                                area={area}
                             />
                         </Grid>
                     )

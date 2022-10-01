@@ -2,6 +2,7 @@ import Africa from 'components/Africa/Africa'
 import America from 'components/America/America'
 import Asia from 'components/Asia/Asia'
 import Australia from 'components/Australia/Australia'
+import Bali from 'components/Bali/Bali'
 import Europe from 'components/Europe/Europe'
 import Locations from 'components/Locations/Locations'
 import MiddleEast from 'components/MiddleEast/MiddleEast'
@@ -17,7 +18,8 @@ const Main = (props: Props) => {
 
             <Routes>
                 <Route path="/" element={<Locations />} />
-                <Route path="asia" element={<Asia />} />
+                <Route path="asia" element={<Asia />}></Route>
+                <Route path="asia/bali" element={<Bali />} />
                 <Route path="europe" element={<Europe />} />
                 <Route path="africa" element={<Africa />} />
                 <Route path="america" element={<America />} />
