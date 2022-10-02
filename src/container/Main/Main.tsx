@@ -5,6 +5,7 @@ import Australia from 'components/Australia/Australia'
 import Bali from 'components/Bali/Bali'
 import Europe from 'components/Europe/Europe'
 import Locations from 'components/Locations/Locations'
+import Malaysia from 'components/Malaysia/Malaysia'
 import MiddleEast from 'components/MiddleEast/MiddleEast'
 import Singapore from 'components/Singapore/Singapore'
 import Slider from 'components/Slider/Slider'
@@ -26,6 +27,7 @@ const Main = (props: Props) => {
                 <Route path="asia/vietnam" element={<Vietnam />} />
                 <Route path="asia/singapore" element={<Singapore />} />
                 <Route path="asia/thailand" element={<Thailand />} />
+                <Route path="asia/malaysia" element={<Malaysia />} />
                 <Route path="europe" element={<Europe />} />
                 <Route path="africa" element={<Africa />} />
                 <Route path="america" element={<America />} />

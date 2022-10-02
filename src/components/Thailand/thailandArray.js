@@ -1,31 +1,31 @@
 export const thailandArray = [
     {
         id: 1,
-        title: '1 Bangkok',
+        title: '1. Bangkok',
         text: 'Bangkok: the charming, buzzing, somewhat overwhelming capital of Thailand. Bangkok is the city where most travelers start their journey through Thailand or Asia. With all the things to do in Bangkok, you can easily spend three days exploring the city. People either love or hate Bangkok. This travel guide shows the best corners and attractions in Bangkok to make you absolutely love this city!',
         image: '/images-thailand/2.jpg',
     },
     {
         id: 2,
-        title: '2 Khao Sok National Park and the Floating Bungalows',
+        title: '2. Khao Sok National Park and the Floating Bungalows',
         text: 'Khao Sok National Park is one of Thailand’s best-kept secrets. Limestone rock formations, wild animals like gibbons, elephants, and the surrounding jungle are just a few things that give you a unique experience of Thailand. There are some great things to do in this area and you can spend anywhere from 2 to 7 days here. This is the ultimate Khao Sok National Park guide.',
         image: '/images-thailand/3.jpg',
     },
     {
         id: 3,
-        title: '3 Koh Lanta',
+        title: '3. Koh Lanta',
         text: 'Koh Lanta: it’s definitely not the most beautiful island in Thailand, but still one you absolutely shouldn’t miss. It is truly one of a kind. By telling you these 7 to do’s on Koh Lanta we hope to convince you to visit this Island.',
         image: '/images-thailand/4.jpg',
     },
     {
         id: 4,
-        title: '4 Koh Tao',
+        title: '4. Koh Tao',
         text: 'Koh Tao is our favorite spot in Thailand. It’s famous for its diving spots and getting your PADI at a low price. But that’s not why we love Koh Tao. We didn’t dive at all! These are our 6 favorite things to do on Koh Tao.',
         image: '/images-thailand/5.jpg',
     },
     {
         id: 5,
-        title: '5 Krabi',
+        title: '5. Krabi',
         text: 'Krabi is a postcard-worthy region in Thailand, with scenes of limestone karsts rising out of crystal clear oceans and sandy white beaches that border thick green forests. Spend your days’ island hopping with a long tail boat, or make longer trips to famous islands Phi Phi and Koh Lanta. However, Krabi isn’t just about beaches. Discover its stunning temples, phenomenal food, and other natural treasures. Here are the best things to do in Krabi, Thailand.',
         image: '/images-thailand/6.jpg',
     },
