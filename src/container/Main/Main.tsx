@@ -7,6 +7,7 @@ import Europe from 'components/Europe/Europe'
 import Locations from 'components/Locations/Locations'
 import MiddleEast from 'components/MiddleEast/MiddleEast'
 import Slider from 'components/Slider/Slider'
+import Vietnam from 'components/Vietnam/Vietnam'
 import { Routes, Route } from 'react-router-dom'
 
 type Props = {}
@@ -20,6 +21,7 @@ const Main = (props: Props) => {
                 <Route path="/" element={<Locations />} />
                 <Route path="asia" element={<Asia />}></Route>
                 <Route path="asia/bali" element={<Bali />} />
+                <Route path="asia/vietnam" element={<Vietnam />} />
                 <Route path="europe" element={<Europe />} />
                 <Route path="africa" element={<Africa />} />
                 <Route path="america" element={<America />} />

@@ -8,10 +8,10 @@ export const asiaArray = [
     },
     {
         id: 2,
-        name: 'Cambodia',
-        image: '/images-asia/cambodia.jpg',
-        description: 'Cambodia is exceptional beauty and undeniable resilience. It’s harrowing history leaves a mark, and gives those visiting a deep appreciation for the optimistic nature of Cambodian people, and the spectacular lands they live on.',
-        area: '/asia/cambodia',
+        name: 'Vietnam',
+        image: '/images-asia/vietnam.jpg',
+        description: 'Vietnam is a country of contrasts, where loud, vibrant cities sit within touching distance of calm oceans and rising limestone karsts.',
+        area: '/asia/vietnam',
     },
     {
         id: 3,
@@ -83,12 +83,6 @@ export const asiaArray = [
         description: 'Thailand’s everlasting strength of spirit and known characterization as the ‘Land of Smiles’, has made it a timeless favorite amongst travelers worldwide.',
         area: '/asia/thailand',
     },
-    {
-        id: 13,
-        name: 'Vietnam',
-        image: '/images-asia/vietnam.jpg',
-        description: 'Vietnam is a country of contrasts, where loud, vibrant cities sit within touching distance of calm oceans and rising limestone karsts.',
-        area: '/asia/vietnam',
-    },
+    
 ]
 
