@@ -9,6 +9,7 @@ type EuropeProps = {
     name: string
     image: string
     description: string
+    area: string
 }
 
 const Europe = (props: Props) => {
@@ -37,13 +38,14 @@ const Europe = (props: Props) => {
                 padding={'15px 140px'}
             >
                 {europeArray.map(
-                    ({ id, name, image, description }: EuropeProps) => (
+                    ({ id, name, image, description, area }: EuropeProps) => (
                         <Grid item xs={12} sm={6} md={6} key={id}>
                             <EuropeItems
                                 id={id}
                                 name={name}
                                 image={image}
                                 description={description}
+                                area={area}
                             />
                         </Grid>
                     )

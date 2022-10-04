@@ -1,9 +1,4 @@
-import {
-    AppBar,
-    Toolbar,
-    Typography,
-    Container,
-} from '@mui/material'
+import { AppBar, Toolbar, Typography, Container } from '@mui/material'
 import Menu from 'components/Menu/Menu'
 
 type Props = {}
