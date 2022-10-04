@@ -3,6 +3,8 @@ import America from 'components/America/America'
 import Asia from 'components/Asia/Asia'
 import Australia from 'components/Australia/Australia'
 import Bali from 'components/Bali/Bali'
+import Colombia from 'components/Colombia/Colombia'
+import CostaRica from 'components/CostaRica/CostaRica'
 import Egypt from 'components/Egypt/Egypt'
 import Europe from 'components/Europe/Europe'
 import France from 'components/France/France'
@@ -14,6 +16,7 @@ import Malta from 'components/Malta/Malta'
 import Mauritius from 'components/Mauritius/Mauritius'
 import MiddleEast from 'components/MiddleEast/MiddleEast'
 import Morocco from 'components/Morocco/Morocco'
+import Peru from 'components/Peru/Peru'
 import Singapore from 'components/Singapore/Singapore'
 import Slider from 'components/Slider/Slider'
 import Spain from 'components/Spain/Spain'
@@ -47,6 +50,9 @@ const Main = (props: Props) => {
                 <Route path="africa/mauritius" element={<Mauritius />} />
                 <Route path="africa/morocco" element={<Morocco />} />
                 <Route path="america" element={<America />} />
+                <Route path="america/colombia" element={<Colombia />} />
+                <Route path="america/costa-rica" element={<CostaRica />} />
+                <Route path="america/peru" element={<Peru />} />
                 <Route path="middle-east" element={<MiddleEast />} />
                 <Route path="australia" element={<Australia />} />
             </Routes>
