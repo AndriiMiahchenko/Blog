@@ -19,11 +19,14 @@ import MiddleEast from 'components/MiddleEast/MiddleEast'
 import Morocco from 'components/Morocco/Morocco'
 import Oman from 'components/Oman/Oman'
 import Peru from 'components/Peru/Peru'
+import Queensland from 'components/Queensland/Queensland'
 import Singapore from 'components/Singapore/Singapore'
 import Slider from 'components/Slider/Slider'
 import Spain from 'components/Spain/Spain'
+import Tasmania from 'components/Tasmania/Tasmania'
 import Thailand from 'components/Thailand/Thailand'
 import Turkey from 'components/Turkey/Turkey'
+import Victoria from 'components/Victoria/Victoria'
 import Vietnam from 'components/Vietnam/Vietnam'
 import { Routes, Route } from 'react-router-dom'
 
@@ -61,6 +64,9 @@ const Main = (props: Props) => {
                 <Route path="middle-east/oman" element={<Oman />} />
                 <Route path="middle-east/turkey" element={<Turkey />} />
                 <Route path="australia" element={<Australia />} />
+                <Route path="australia/queensland" element={<Queensland />} />
+                <Route path="australia/victoria" element={<Victoria />} />
+                <Route path="australia/tasmania" element={<Tasmania />} />
             </Routes>
         </>
     )

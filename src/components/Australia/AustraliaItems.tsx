@@ -1,4 +1,5 @@
 import { Button, Card, CardActions, CardContent } from '@mui/material'
+import { NavLink } from 'react-router-dom'
 import './AustraliaItems.scss'
 
 type ProductProps = {
@@ -6,9 +7,10 @@ type ProductProps = {
     name: string
     description: string
     image: string
+    area: string
 }
 
-const AustraliaItems = ({ name, description, image }: ProductProps) => {
+const AustraliaItems = ({ name, description, image, area }: ProductProps) => {
     return (
         <>
             <Card
@@ -28,7 +30,11 @@ const AustraliaItems = ({ name, description, image }: ProductProps) => {
                 </CardContent>
 
                 <CardActions className="btn-wrap">
-                    <Button variant="contained">Start your journey</Button>
+                    <Button variant="contained">
+                        <NavLink to={area} className="btn-journey">
+                            Start your journey
+                        </NavLink>
+                    </Button>
                 </CardActions>
             </Card>
         </>
