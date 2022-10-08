@@ -25,7 +25,7 @@ export default function SelectDestinations() {
                         fontSize: '16px',
                     }}
                 >
-                    Destinations
+                    Category
                 </InputLabel>
                 <Select
                     labelId="demo-simple-select-label"
