@@ -18,7 +18,7 @@ const Menu = (props: Props) => {
             <Button color="inherit">Team</Button>
             <Button color="inherit">
                 <NavLink to="favourite" className="menu-style">
-                    Favorite {''}
+                    Favourite
                     <FavoriteBorderIcon
                         fontSize="small"
                         style={{ marginLeft: '5px' }}

@@ -2,7 +2,12 @@ import { Grid, Typography } from '@mui/material'
 import { locationsArray } from 'components/Locations/locationsArray'
 import LocationsItem from 'components/Locations/LocationsItem'
 
-type Props = {}
+type Props = {
+    locationsLikeState: {
+        [id: number]: boolean
+    }
+    toggleLikeState: (id: number) => void
+}
 
 type LocationsProps = {
     id: number
@@ -16,7 +21,7 @@ type LocationsProps = {
     category: string
 }
 
-const America = (props: Props) => {
+const America = ({ locationsLikeState, toggleLikeState }: Props) => {
     return (
         <>
             <Typography
@@ -66,6 +71,8 @@ const America = (props: Props) => {
                                     bgcolor={bgcolor}
                                     dsccolor={dsccolor}
                                     color={color}
+                                    isLiked={locationsLikeState[id]}
+                                    toggleLikeState={toggleLikeState}
                                 />
                             </Grid>
                         )
