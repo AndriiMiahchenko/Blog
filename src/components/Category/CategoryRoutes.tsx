@@ -8,21 +8,19 @@ import Europe from './Europe'
 import MiddleEast from './MiddleEast'
 
 type Props = {
-    locationsLikeState: {
-        [id: number]: boolean
-    }
-    toggleLikeState: (id: number) => void
+    addPostToCart: (id: number, count: number) => void
+    removePostFromCart: (id: number) => void
 }
 
-const CategoryRoutes = ({ locationsLikeState, toggleLikeState }: Props) => {
+const CategoryRoutes = ({ addPostToCart, removePostFromCart }: Props) => {
     return (
         <Routes>
             <Route
                 path="africa"
                 element={
                     <Africa
-                        locationsLikeState={locationsLikeState}
-                        toggleLikeState={toggleLikeState}
+                        addPostToCart={addPostToCart}
+                        removePostFromCart={removePostFromCart}
                     />
                 }
             />
@@ -30,8 +28,8 @@ const CategoryRoutes = ({ locationsLikeState, toggleLikeState }: Props) => {
                 path="asia"
                 element={
                     <Asia
-                        locationsLikeState={locationsLikeState}
-                        toggleLikeState={toggleLikeState}
+                        addPostToCart={addPostToCart}
+                        removePostFromCart={removePostFromCart}
                     />
                 }
             />
@@ -39,8 +37,8 @@ const CategoryRoutes = ({ locationsLikeState, toggleLikeState }: Props) => {
                 path="australia"
                 element={
                     <Australia
-                        locationsLikeState={locationsLikeState}
-                        toggleLikeState={toggleLikeState}
+                        addPostToCart={addPostToCart}
+                        removePostFromCart={removePostFromCart}
                     />
                 }
             />
@@ -48,8 +46,8 @@ const CategoryRoutes = ({ locationsLikeState, toggleLikeState }: Props) => {
                 path="america"
                 element={
                     <America
-                        locationsLikeState={locationsLikeState}
-                        toggleLikeState={toggleLikeState}
+                        addPostToCart={addPostToCart}
+                        removePostFromCart={removePostFromCart}
                     />
                 }
             />
@@ -57,8 +55,8 @@ const CategoryRoutes = ({ locationsLikeState, toggleLikeState }: Props) => {
                 path="middle-east"
                 element={
                     <MiddleEast
-                        locationsLikeState={locationsLikeState}
-                        toggleLikeState={toggleLikeState}
+                        addPostToCart={addPostToCart}
+                        removePostFromCart={removePostFromCart}
                     />
                 }
             />
@@ -66,8 +64,8 @@ const CategoryRoutes = ({ locationsLikeState, toggleLikeState }: Props) => {
                 path="europe"
                 element={
                     <Europe
-                        locationsLikeState={locationsLikeState}
-                        toggleLikeState={toggleLikeState}
+                        addPostToCart={addPostToCart}
+                        removePostFromCart={removePostFromCart}
                     />
                 }
             />

@@ -1,4 +1,16 @@
-export const locationsArray = [
+export type Post = {
+    id: number
+    name: string
+    image: string
+    description: string
+    area: string
+    bgcolor: string
+    dsccolor: string
+    color: string
+    category: string
+}
+
+const locationsArray: Post[] = [
     {
         id: 1,
         name: 'Bali',
@@ -243,3 +255,11 @@ export const locationsArray = [
     },
 ]
 
+export default locationsArray
+
+export const getPostsObject = (array: Post[]) => {
+    return array.reduce((object, post) => ({
+        ...object,
+        [post.id]: post
+    }), {})
+}

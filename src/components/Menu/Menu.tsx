@@ -17,11 +17,11 @@ const Menu = (props: Props) => {
             <SelectDestinations />
             <Button color="inherit">Team</Button>
             <Button color="inherit">
-                <NavLink to="favourite" className="menu-style">
-                    Favourite
+                <NavLink to="/favourits" className="menu-style">
+                    Favorites
                     <FavoriteBorderIcon
                         fontSize="small"
-                        style={{ marginLeft: '5px' }}
+                        style={{ margin: '0 5px' }}
                     />
                 </NavLink>
             </Button>

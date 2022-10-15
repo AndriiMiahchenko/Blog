@@ -1,45 +1,43 @@
-import Bali from 'components/Bali/Bali'
-import Colombia from 'components/Colombia/Colombia'
-import CostaRica from 'components/CostaRica/CostaRica'
-import Egypt from 'components/Egypt/Egypt'
-import France from 'components/France/France'
-import Iceland from 'components/Iceland/Iceland'
-import Italy from 'components/Italy/Italy'
-import Jordan from 'components/Jordan/Jordan'
+import Bali from 'components/Places/Bali/Bali'
+import Colombia from 'components/Places/Colombia/Colombia'
+import CostaRica from 'components/Places/CostaRica/CostaRica'
+import Egypt from 'components/Places/Egypt/Egypt'
+import France from 'components/Places/France/France'
+import Iceland from 'components/Places/Iceland/Iceland'
+import Italy from 'components/Places/Italy/Italy'
+import Jordan from 'components/Places/Jordan/Jordan'
 import Locations from 'components/Locations/Locations'
-import Malaysia from 'components/Malaysia/Malaysia'
-import Malta from 'components/Malta/Malta'
-import Mauritius from 'components/Mauritius/Mauritius'
-import Morocco from 'components/Morocco/Morocco'
-import Oman from 'components/Oman/Oman'
-import Peru from 'components/Peru/Peru'
-import Queensland from 'components/Queensland/Queensland'
-import Singapore from 'components/Singapore/Singapore'
-import Spain from 'components/Spain/Spain'
-import Tasmania from 'components/Tasmania/Tasmania'
-import Thailand from 'components/Thailand/Thailand'
-import Turkey from 'components/Turkey/Turkey'
-import Victoria from 'components/Victoria/Victoria'
-import Vietnam from 'components/Vietnam/Vietnam'
+import Malaysia from 'components/Places/Malaysia/Malaysia'
+import Malta from 'components/Places/Malta/Malta'
+import Mauritius from 'components/Places/Mauritius/Mauritius'
+import Morocco from 'components/Places/Morocco/Morocco'
+import Oman from 'components/Places/Oman/Oman'
+import Peru from 'components/Places/Peru/Peru'
+import Queensland from 'components/Places/Queensland/Queensland'
+import Singapore from 'components/Places/Singapore/Singapore'
+import Spain from 'components/Places/Spain/Spain'
+import Tasmania from 'components/Places/Tasmania/Tasmania'
+import Thailand from 'components/Places/Thailand/Thailand'
+import Turkey from 'components/Places/Turkey/Turkey'
+import Victoria from 'components/Places/Victoria/Victoria'
+import Vietnam from 'components/Places/Vietnam/Vietnam'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 type Props = {
-    locationsLikeState: {
-        [id: number]: boolean
-    }
-    toggleLikeState: (id: number) => void
+    addPostToCart: (id: number, count: number) => void
+    removePostFromCart: (id: number) => void
 }
 
-const LocationsRoutes = ({ locationsLikeState, toggleLikeState }: Props) => {
+const LocationsRoutes = ({ addPostToCart, removePostFromCart }: Props) => {
     return (
         <Routes>
             <Route
                 path="/"
                 element={
                     <Locations
-                        locationsLikeState={locationsLikeState}
-                        toggleLikeState={toggleLikeState}
+                        addPostToCart={addPostToCart}
+                        removePostFromCart={removePostFromCart}
                     />
                 }
             />

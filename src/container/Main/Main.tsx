@@ -1,26 +1,43 @@
 import CategoryRoutes from 'components/Category/CategoryRoutes'
+
 import LocationsRoutes from 'components/LocationsRoutes/LocationsRoutes'
 import Slider from 'components/Slider/Slider'
+import FavouritePage from 'pages/FavouritePage/FavouritePage'
+
+import { Route, Routes } from 'react-router-dom'
 
 type Props = {
-    locationsLikeState: {
-        [id: number]: boolean
+    addPostToCart: (id: number, count: number) => void
+    removePostFromCart: (id: number) => void
+
+    postsInCart: {
+        [id: number]: number
     }
-    toggleLikeState: (id: number) => void
 }
 
-const Main = ({ locationsLikeState, toggleLikeState }: Props) => {
+const Main = ({ addPostToCart, postsInCart, removePostFromCart }: Props) => {
     return (
         <>
             <Slider />
             <CategoryRoutes
-                locationsLikeState={locationsLikeState}
-                toggleLikeState={toggleLikeState}
+                addPostToCart={addPostToCart}
+                removePostFromCart={removePostFromCart}
             />
             <LocationsRoutes
-                locationsLikeState={locationsLikeState}
-                toggleLikeState={toggleLikeState}
+                addPostToCart={addPostToCart}
+                removePostFromCart={removePostFromCart}
             />
+            <Routes>
+                <Route
+                    path="favourits"
+                    element={
+                        <FavouritePage
+                            removePostFromCart={removePostFromCart}
+                            postsInCart={postsInCart}
+                        />
+                    }
+                />
+            </Routes>
         </>
     )
 }

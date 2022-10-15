@@ -1,48 +1,27 @@
-import { Button, Card, CardActions, CardContent } from '@mui/material'
-import './LocationsItem.scss'
-import { NavLink } from 'react-router-dom'
-
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
+import { Grid, Card, CardContent, Button, CardActions } from '@mui/material'
+import DeleteIcon from '@mui/icons-material/Delete'
 import FavoriteIcon from '@mui/icons-material/Favorite'
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
+import { addPostToCart, removePostFromCart } from 'redux/cartReducer'
+import { Post } from 'components/Locations/locationsArray'
+import { NavLink } from 'react-router-dom'
 import { addLike, removeLike } from 'redux/likeReducer'
 
-import { useState } from 'react'
-
-type ProductProps = {
-    id: number
-    name: string
-    description: string
-    image: string
-    area: string
-    bgcolor: string
-    dsccolor: string
-    color: string
-    addPostToCart: (id: number, count: number) => void
+type Props = {
+    post: Post
     removePostFromCart: (id: number) => void
 }
 
-const LocationsItem = ({
-    id,
-    name,
-    description,
-    image,
-    area,
-    bgcolor,
-    dsccolor,
-    color,
-    addPostToCart,
-    removePostFromCart,
-}: ProductProps) => {
-    const [count, setCount] = useState<number>(1)
-    const isLiked = useAppSelector((state) => state.postsLikeState[id])
+const PostsListItem = ({ post, removePostFromCart }: Props) => {
+    const isLiked = useAppSelector((state) => state.postsLikeState[post.id])
     const dispatch = useAppDispatch()
 
     return (
-        <>
+        <Grid item xs={12} sm={6}>
             <Card
                 style={{
-                    backgroundColor: `${bgcolor}`,
+                    backgroundColor: `${post.bgcolor}`,
                     textAlign: 'center',
                 }}
             >
@@ -50,52 +29,50 @@ const LocationsItem = ({
                     <Button
                         onClick={() =>
                             isLiked
-                                ? dispatch(removeLike(id))
-                                : dispatch(addLike(id))
+                                ? dispatch(removeLike(post.id))
+                                : dispatch(addLike(post.id))
                         }
                     >
                         {isLiked ? (
                             <Button
                                 variant="outlined"
-                                onClick={() => removePostFromCart(id)}
+                                onClick={() => removePostFromCart(post.id)}
                             >
                                 <FavoriteIcon />
                             </Button>
                         ) : (
                             <Button
                                 variant="contained"
-                                onClick={() => addPostToCart(id, count)}
+                                onClick={() => addPostToCart(post.id)}
                             >
                                 <FavoriteBorderIcon />
                             </Button>
                         )}
                     </Button>
-
-                    <h3 className={`product-title`}>{name}</h3>
+                    <h3 className={`product-title`}>{post.name}</h3>
                     <div className="product-img">
-                        <img src={image} alt="" />
+                        <img src={post.image} alt="" />
                     </div>
                     <div
                         className="product-description"
                         style={{
-                            backgroundColor: `${dsccolor}`,
-                            color: `${color}`,
+                            backgroundColor: `${post.dsccolor}`,
+                            color: `${post.color}`,
                         }}
                     >
-                        {description}
+                        {post.description}
                     </div>
                 </CardContent>
-
                 <CardActions className="btn-wrap">
                     <Button variant="contained">
-                        <NavLink to={area} className="btn-locations">
+                        <NavLink to={post.area} className="btn-locations">
                             Let`s Travel
                         </NavLink>
                     </Button>
                 </CardActions>
             </Card>
-        </>
+        </Grid>
     )
 }
 
-export default LocationsItem
+export default PostsListItem

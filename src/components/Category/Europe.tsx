@@ -1,12 +1,10 @@
 import { Grid, Typography } from '@mui/material'
-import { locationsArray } from 'components/Locations/locationsArray'
+import locationsArray from 'components/Locations/locationsArray'
 import LocationsItem from 'components/Locations/LocationsItem'
 
 type Props = {
-    locationsLikeState: {
-        [id: number]: boolean
-    }
-    toggleLikeState: (id: number) => void
+    addPostToCart: (id: number, count: number) => void
+    removePostFromCart: (id: number) => void
 }
 
 type LocationsProps = {
@@ -21,7 +19,7 @@ type LocationsProps = {
     category: string
 }
 
-const Europe = ({ locationsLikeState, toggleLikeState }: Props) => {
+const Europe = ({ addPostToCart, removePostFromCart }: Props) => {
     return (
         <>
             <Typography
@@ -71,8 +69,8 @@ const Europe = ({ locationsLikeState, toggleLikeState }: Props) => {
                                     bgcolor={bgcolor}
                                     dsccolor={dsccolor}
                                     color={color}
-                                    isLiked={locationsLikeState[id]}
-                                    toggleLikeState={toggleLikeState}
+                                    addPostToCart={addPostToCart}
+                                    removePostFromCart={removePostFromCart}
                                 />
                             </Grid>
                         )
