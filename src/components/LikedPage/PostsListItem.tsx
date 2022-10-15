@@ -1,5 +1,4 @@
 import { Grid, Card, CardContent, Button, CardActions } from '@mui/material'
-import DeleteIcon from '@mui/icons-material/Delete'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'

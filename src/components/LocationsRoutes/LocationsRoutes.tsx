@@ -21,7 +21,6 @@ import Thailand from 'components/Places/Thailand/Thailand'
 import Turkey from 'components/Places/Turkey/Turkey'
 import Victoria from 'components/Places/Victoria/Victoria'
 import Vietnam from 'components/Places/Vietnam/Vietnam'
-import React from 'react'
 import { Route, Routes } from 'react-router-dom'
 
 type Props = {

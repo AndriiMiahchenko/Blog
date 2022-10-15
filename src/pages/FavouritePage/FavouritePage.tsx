@@ -1,6 +1,4 @@
 import { Grid } from '@mui/material'
-import { useAppSelector } from 'redux/hooks'
-import { Link } from 'react-router-dom'
 import LikedPageList from 'components/LikedPage/LikedPageList'
 import PostsListItem from 'components/LikedPage/PostsListItem'
 

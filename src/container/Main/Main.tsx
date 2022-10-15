@@ -1,9 +1,7 @@
 import CategoryRoutes from 'components/Category/CategoryRoutes'
-
 import LocationsRoutes from 'components/LocationsRoutes/LocationsRoutes'
 import Slider from 'components/Slider/Slider'
 import FavouritePage from 'pages/FavouritePage/FavouritePage'
-
 import { Route, Routes } from 'react-router-dom'
 
 type Props = {

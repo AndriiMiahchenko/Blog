@@ -1,12 +1,10 @@
 import { Button, Card, CardActions, CardContent } from '@mui/material'
 import './LocationsItem.scss'
 import { NavLink } from 'react-router-dom'
-
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder'
 import FavoriteIcon from '@mui/icons-material/Favorite'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { addLike, removeLike } from 'redux/likeReducer'
-
 import { useState } from 'react'
 
 type ProductProps = {

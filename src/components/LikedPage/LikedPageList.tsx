@@ -1,6 +1,5 @@
 import { keys } from 'lodash'
 import locationsArray from 'components/Locations/locationsArray'
-import { useAppSelector } from 'redux/hooks'
 import { getPostsObject, Post } from 'components/Locations/locationsArray'
 import PostsListItem from './PostsListItem'
 import { Grid, Typography } from '@mui/material'
