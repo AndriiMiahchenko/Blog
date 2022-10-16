@@ -119,7 +119,11 @@ const Reviews = (props: Props) => {
                                 Please leave a review
                             </Typography>
                             <div>
+                                <label htmlFor="lll">
+                                    <div>Name: </div>
+                                </label>
                                 <TextField
+                                    id="lll"
                                     size="small"
                                     value={newReview.name}
                                     onChange={handleChangeName}
@@ -131,7 +135,11 @@ const Reviews = (props: Props) => {
                                 />
                             </div>
                             <br />
+                            <label htmlFor="iii">
+                                <div>Review: </div>
+                            </label>
                             <TextareaAutosize
+                                id="iii"
                                 minRows={5}
                                 value={newReview.text}
                                 onChange={handleChangeText}
